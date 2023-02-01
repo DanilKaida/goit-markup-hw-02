@@ -2,8 +2,10 @@
   --main-text-color: #434455;
   --main-title-color: #2e2f42;
   --main-background-color: #ffffff;
+  --hero-text-color: #ffffff;
   --second-backgrond-color: #f4f4fd;
   --hero-footer-color: #2e2f42;
+  --hover-focus-color: #4d5ae5;
 }
 
 body {
@@ -49,7 +51,7 @@ body {
 }
 
 .header-logo:is(:hover, :focus) {
-  color: #4d5ae5;
+  color: var(--hover-focus-color);
 }
 
 .logo-one {
@@ -71,7 +73,7 @@ body {
 }
 
 .header-link:is(:hover, :focus) {
-  color: #4d5ae5;
+  color: var(--hover-focus-color);
 }
 
 .adress-list {
@@ -88,7 +90,7 @@ body {
   color: inherit;
 }
 .header-address:is(:hover, :focus) {
-  color: #4d5ae5;
+  color: var(--hover-focus-color);
 }
 
 /* -----------------------------------HERO */
@@ -103,22 +105,24 @@ body {
   line-height: calc(60 / 56);
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--hero-text-color);
 }
 
 .hero-btn {
-  background-color: #4d5ae5;
+  background-color: var(--hover-focus-color);
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--hero-text-color);
   cursor: pointer;
 }
 .hero-btn:is(:hover, :focus) {
-  color: #4d5ae5;
+  color: var(--hover-focus-color);
+  background-color: var(--hero-text-color);
 }
 /* ----------------------section FEATURES */
 
@@ -208,11 +212,11 @@ body {
   color: #f4f4fd;
 }
 .footer-logo:is(:hover, :focus) {
-  color: #4d5ae5;
+  color: var(--hover-focus-color);
 }
 
 .footer-logo-one {
-  color: #4d5ae5;
+  color: var(--hover-focus-color);
 }
 
 .footer-text {
@@ -240,11 +244,13 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
+  background-color: var(--second-backgrond-color);
+  color: var(--hover-focus-color);
   cursor: pointer;
 }
 .portfolio-btn:is(:hover, :focus) {
-  color: #404BBF;
+  color: #FFFFFF;
+  background-color: #404BBF;
 }
 /* ---------------------------Work examples -- */
 
@@ -252,6 +258,9 @@ body {
 }
 
 .examples-item {
+}
+
+.examples-link {
 }
 
 .examples-subtitle {
@@ -264,6 +273,7 @@ body {
 
 .examples-type {
   font-size: 16px;
+  color: var(--main-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
